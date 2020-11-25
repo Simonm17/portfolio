@@ -3,8 +3,10 @@ import { Switch, Route } from 'react-router-dom';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
+import MovieDetail from './pages/MovieDetail';
 import GlobalStyle from './components/GlobalStyle';
 import Nav from './components/Nav';
+
 
 function App() {
   return (
@@ -15,8 +17,11 @@ function App() {
         <Route path="/contact">
           <ContactUs />
         </Route>
-        <Route path="/our-work">
+        <Route path="/work" exact>
           <OurWork />
+        </Route>
+        <Route path="/work/:id">
+          <MovieDetail />
         </Route>
         <Route path="/" exact>
           <AboutUs />
