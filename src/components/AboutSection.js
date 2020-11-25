@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { About, Description, Image, Hide } from '../styles';
 import React from 'react';
 import home1 from '../img/home1.png';
-
+import Wave from './Wave';
 
 
 const AboutSection = () => {
@@ -31,6 +31,7 @@ const AboutSection = () => {
             <Image>
                 <motion.img variants={photoAnim} src={home1} alt="home camera guy"></motion.img>
             </Image>
+            <Wave />
         </About>
     )
 }
