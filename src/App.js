@@ -6,7 +6,6 @@ import OurWork from './pages/OurWork';
 import MovieDetail from './pages/MovieDetail';
 import GlobalStyle from './components/GlobalStyle';
 import Nav from './components/Nav';
-
 import { AnimatePresence } from 'framer-motion';
 
 

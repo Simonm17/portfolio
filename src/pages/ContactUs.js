@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation, titleAnimation } from '../animation';
 import styled from 'styled-components';
 
+
 const ContactUs = () => {
     return (
         <ContactStyle
