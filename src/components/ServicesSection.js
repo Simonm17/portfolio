@@ -17,7 +17,7 @@ const ServicesSection = () => {
     return (
         <Services variants={fade} animate={controls} initial="hidden" ref={element}>
             <Description>
-                <h2>Ryan's Favorite <span>Software</span></h2>
+                <h2>Ryan's <span>Favorites</span></h2>
                 <Cards>
                     <Card>
                         <div className="icon">

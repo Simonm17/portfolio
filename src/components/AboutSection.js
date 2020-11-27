@@ -21,7 +21,7 @@ const AboutSection = () => {
                         <motion.h2 variants={titleAnimation}>I'm <span>Ryan,</span> your go-to  software developer.</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}>Thanks for taking the time to stop by!
+                <motion.p variants={fade}><i class="fas fa-map-marker-alt"></i> Orange County, CA, USA
                 </motion.p>
                 <Button href="#faq" variants={fade}>More About Me</Button>
             </Description>
