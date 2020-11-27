@@ -30,14 +30,15 @@ const MovieDetail = () => {
                     <img src={movie.mainImg} alt="movie" />
                 </HeadLine>
                 <Awards>
-                    {movie.awards.map( award => (
+                    {movie.infos.map( info => (
                         <Award
-                            title={award.title}
-                            description={award.description}
-                            key={award.tite}
+                            title={info.title}
+                            description={info.description}
+                            key={info.tite}
                         />
                     ))}
                 </Awards>
+                <Github href={movie.link} target="_blank" rel="nonreferrer">View code <i class="fas fa-code-branch"></i></Github>
                 <ImageDisplay>
                     <img src={movie.secondaryImg} alt="movie" />
                 </ImageDisplay>
@@ -49,6 +50,10 @@ const MovieDetail = () => {
 
 const Details = styled(motion.div)`
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `;
 
 const HeadLine = styled.div`
@@ -65,13 +70,14 @@ const HeadLine = styled.div`
         width: 100%;
         height: 70vh;
         object-fit: cover;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19); 
     }
 `;
 
 const Awards = styled.div`
-    min-height: 79vh;
+    min-height: 80vh;
     display: flex;
-    margin: 5rem 10rem;
+    margin: 5rem 5rem 0rem 5rem;
     align-items: center;
     justify-content: space-around;
     @media (max-width: 1500px) {
@@ -113,6 +119,15 @@ const ImageDisplay = styled.div`
         height: 100%;
         object-fit: cover;
     }
+`;
+
+const Github = styled.a`
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    border: transparent;
+    border-radius: 5px;
+    margin: -2rem 0 10rem 0;
 `;
 
 export default MovieDetail;

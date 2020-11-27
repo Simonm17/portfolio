@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { About } from '../styles';
 import Toggle from './Toggle';
 import { AnimateSharedLayout } from 'framer-motion';
 import { useScroll } from './UseScroll';
 import { fade } from '../animation';
+import { Link } from 'react-router-dom';
 
 const FaqSection = () => {
     const [element, controls] = useScroll();
@@ -39,14 +40,7 @@ const FaqSection = () => {
                 <Toggle title='"May I see some of your projects?"'>
                     <div className="answer">
                         <p>
-                            Absolutely! You can check out my work in my Work page.
-                        </p>
-                    </div>
-                </Toggle>
-                <Toggle title='"Did you say you got AIDS?"'>
-                    <div className="answer">
-                        <p>
-                            No, I don't have AIDS. That's not what I said. Next question!
+                            Absolutely! You can check out my work in my <Link to="/projects">project page</Link>.
                         </p>
                     </div>
                 </Toggle>
@@ -63,6 +57,11 @@ const Faq = styled(About)`
     h2 {
         padding-bottom: 2rem;
         font-weight: lighter;
+    }
+    a {
+        color: #23d997;
+        text-decoration: none;
+        font-size: 1.5rem;
     }
     .faq-line {
         background: #cccccc;

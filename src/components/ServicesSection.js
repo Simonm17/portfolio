@@ -1,12 +1,8 @@
 import React from 'react';
 // import styles
 import styled from 'styled-components';
-import { About, Description, Image, Hide } from '../styles';
+import { About, Description, Image } from '../styles';
 // import icons
-import clock from '../img/clock.svg';
-import diaphragm from '../img/diaphragm.svg';
-import money from '../img/money.svg';
-import teamwork from '../img/teamwork.svg';
 import home2 from '../img/home2.png';
 import { useScroll } from './UseScroll';
 import { fade } from '../animation';

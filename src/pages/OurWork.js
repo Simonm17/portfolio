@@ -7,9 +7,9 @@ import ScrollTop from '../components/ScrollTop';
 // styled
 import styled from 'styled-components';
 // images
-import athlete from '../img/athlete-small.png';
-import theracer from '../img/theracer-small.png';
-import goodtimes from '../img/goodtimes-small.png';
+import meeting from '../img/meeting.jpg';
+import blog from '../img/blog.jpg';
+import boilerplate from '../img/boilerplate.jpg';
 
 
 
@@ -27,29 +27,29 @@ const OurWork = () => {
                 <Frame4 variants={slider}></Frame4>
             </motion.div>
             <Movie>
-                <motion.h2 variants={fade}>The Athelete</motion.h2>
+                <motion.h2 variants={fade}>Scheduler</motion.h2>
                 <motion.div variants={lineAnim} className="line">
                 </motion.div>
-                <Link to="/work/the-athlete">
+                <Link to="/projects/scheduler">
                     <Hide>
-                        <motion.img variants={photoAnim} src={athlete} alt="athlete"/>
+                        <motion.img variants={photoAnim} src={meeting} alt="meeting"/>
                     </Hide>
                 </Link>
             </Movie>
             <Movie ref={element} variants={fade} initial="hidden" animate={controls}>
-                <h2>The Racer</h2>
+                <h2>Django Boilerplate</h2>
                 <motion.div variants={lineAnim} className="line">
                 </motion.div>
-                <Link to="/work/the-racer">
-                    <img src={theracer} alt="the racer"/>
+                <Link to="/projects/django-boilerplate">
+                    <img src={boilerplate} alt="boilerplate"/>
                 </Link>
             </Movie>
             <Movie ref={element2} variants={fade} initial="hidden" animate={controls2}>
-                <h2>Good Times</h2>
+                <h2>Personal Blog</h2>
                 <motion.div variants={lineAnim} className="line">
                 </motion.div>
-                <Link to="/work/good-times">
-                    <img src={goodtimes} alt="good times"/>
+                <Link to="/projects/blog">
+                    <img src={blog} alt="good times"/>
                 </Link>
             </Movie>
             <ScrollTop />

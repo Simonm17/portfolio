@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { pageAnimation, titleAnimation } from '../animation';
+import { pageAnimation } from '../animation';
 // Page Components
 import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';

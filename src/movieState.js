@@ -1,79 +1,82 @@
 //Import Images
-import athlete from "./img/athlete-small.png";
-import goodtimes from "./img/goodtimes-small.png";
-import theracer from "./img/theracer-small.png";
-import athlete2 from "./img/athlete2.png";
-import goodtimes2 from "./img/good-times2.jpg";
-import theracer2 from "./img/the-racer2.jpg";
+import meeting from './img/meeting.jpg';
+import meeting2 from './img/meeting2.jpg';
+import boilerplate from './img/boilerplate.jpg';
+import boilerplate2 from './img/boilerplate2.jpg';
+import blog from './img/blog.jpg';
+import blog2 from './img/blog2.jpg';
 
 export const MovieState = () => {
   return [
     {
-      title: "The Athlete",
-      mainImg: athlete,
-      secondaryImg: athlete2,
-      url: "/work/the-athlete",
-      awards: [
+      title: "Scheduler",
+      mainImg: meeting,
+      secondaryImg: meeting2,
+      url: "/projects/scheduler",
+      link: "https://github.com/Simonm17/scheduler",
+      infos: [
         {
-          title: "Truly A masterpiece",
+          title: "Schedule your QME's.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Sesigned to keep track of your medigal-legal appointments.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Manage your account easily.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Uses Django all-auth and O'Auth logins to keep your account safe and simple.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "It's part of something bigger.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-      ],
-    },
-    {
-      title: "Good Times",
-      mainImg: goodtimes,
-      url: "/work/good-times",
-      secondaryImg: goodtimes2,
-      awards: [
-        {
-          title: "Truly A masterpiece",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "Fresh look on a brutal sport.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
-        },
-        {
-          title: "It’s okay lmao.",
-          description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Scheduling your appointments is just one of many features to come in a legal case management software system.”",
         },
       ],
     },
     {
-      title: "The Racer",
-      mainImg: theracer,
-      url: "/work/the-racer",
-      secondaryImg: theracer2,
-      awards: [
+      title: "Django Boilerplate",
+      mainImg: boilerplate,
+      url: "/projects/django-boilerplate",
+      secondaryImg: boilerplate2,
+      link: "https://github.com/Simonm17/django_boilerplate",
+      infos: [
         {
-          title: "Truly A masterpiece",
+          title: "Foundation to any good project",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Create efficient account management systems.”",
         },
         {
-          title: "Fresh look on a brutal sport.",
+          title: "Looks fresh and clean.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Built to look sharp and crisp.”",
         },
         {
-          title: "It’s okay lmao.",
+          title: "Rinse and repeat.",
           description:
-            "“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”",
+            "“Built to be reused again and again.”",
+        },
+      ],
+    },
+    {
+      title: "Ryan's Personal Blog",
+      mainImg: blog,
+      url: "/projects/blog",
+      secondaryImg: blog2,
+      link: "https://github.com/Simonm17/django_blog",
+      infos: [
+        {
+          title: "This is where it all began.",
+          description:
+            "“Showcasing my first project that started it all.”",
+        },
+        {
+          title: "One framework, countless websites.",
+          description:
+            "“Demonstrating the limitless potential of Django.”",
+        },
+        {
+          title: "Start here now.",
+          description:
+            "“Start your own coding journey with a basic blog app as soon as today!”",
         },
       ],
     },
