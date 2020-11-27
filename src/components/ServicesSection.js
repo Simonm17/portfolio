@@ -17,35 +17,39 @@ const ServicesSection = () => {
     return (
         <Services variants={fade} animate={controls} initial="hidden" ref={element}>
             <Description>
-                <h2>High <span>quality</span> services</h2>
+                <h2>Ryan's Favorite <span>Software</span></h2>
                 <Cards>
                     <Card>
                         <div className="icon">
-                            <img src={clock} alt="clock"/>
-                            <h3>Efficient</h3>
+                            <i class="fab fa-python"></i>
+                            <h3>Python</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Easy to learn and perfect for self-teaching developers.
+                        </p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={diaphragm} alt="diaphragm"/>
-                            <h3>Diaphragm</h3>
+                            <i class="fas fa-server"></i>
+                            <h3>Django</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>
+                            Fast setup, good built-in security, and has ready-to-use features like class-based views.
+                        </p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={money} alt="money"/>
-                            <h3>Affordable</h3>
+                            <i class="fab fa-react"></i>
+                            <h3>React</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Fast, clean, and perfect for API integration.</p>
                     </Card>
                     <Card>
                         <div className="icon">
-                            <img src={teamwork} alt="teamwork"/>
-                            <h3>Teamwork</h3>
+                            <i class="fas fa-database"></i>
+                            <h3>PostgreSQL</h3>
                         </div>
-                        <p>Lorem ipsum dolor sit amet.</p>
+                        <p>Highly reliable and stable open source database.</p>
                     </Card>
                 </Cards>
             </Description>
@@ -79,6 +83,21 @@ const Card = styled.div`
     .icon {
         display: flex;
         align-items: center;
+    }
+    .fas, .fab {
+        font-size: 2.1rem;
+    }
+    .fa-python {
+        color: #4B8BBE;
+    }
+    .fa-server {
+        color: #23d997;
+    }
+    .fa-react {
+        color: #61DBFB;
+    }
+    .fa-database {
+        color: #008bb9;
     }
     h3 {
         margin-left: 1rem;

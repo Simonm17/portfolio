@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { About, Description, Image, Hide } from '../styles';
 import React from 'react';
 import home1 from '../img/home1.png';
+import talgi from '../img/talgi.jpg';
 import Wave from './Wave';
 
 
@@ -14,26 +15,39 @@ const AboutSection = () => {
             <Description>
                 <motion.div>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
+                        <motion.h2 variants={titleAnimation}>Hi there!</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}>your <span>dreams</span> come</motion.h2>
-                    </Hide>
-                    <Hide>
-                        <motion.h2 variants={titleAnimation}>true.</motion.h2>
+                        <motion.h2 variants={titleAnimation}>I'm <span>Ryan,</span> your go-to  software developer.</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}>Contact us for any photography or videography ideas that you have.
-                    We have professionals with amazing skills.
+                <motion.p variants={fade}>Thanks for taking the time to stop by!
                 </motion.p>
-                <motion.button variants={fade}>Contact Us</motion.button>
+                <Button href="#faq" variants={fade}>More About Me</Button>
             </Description>
             <Image>
-                <motion.img variants={photoAnim} initial="hidden" animate="show" src={home1} alt="home camera guy"></motion.img>
+                <motion.img variants={photoAnim} initial="hidden" animate="show" src={talgi} alt="cute lil yorkie porkie"></motion.img>
             </Image>
             <Wave />
         </About>
     )
 }
+
+const Button = styled(motion.a)`
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: 3px solid #23d997;
+    background: transparent;
+    color: white;
+    transition: all 0.5s ease;
+    &:hover {
+        background-color: #23d997;
+        color: white;
+    }
+`;
 
 export default AboutSection;

@@ -9,28 +9,46 @@ import { fade } from '../animation';
 const FaqSection = () => {
     const [element, controls] = useScroll();
     return (
-        <Faq variants={fade} animate={controls} initial="hidden" ref={element}>
-            <h2>Any Questions? <span>FAQ</span></h2>
+        <Faq id="faq" variants={fade} animate={controls} initial="hidden" ref={element}>
+            <h2>You got Q's, I got A's. <span>FAQ</span></h2>
             <AnimateSharedLayout>
-                <Toggle title="How Do I Start?">
-                        <div className="answer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
-                        </div>
+                <Toggle title='"Tell me a little bit about yourself!"'>
+                    <div className="answer">
+                        <p>
+                            I am an aspiring software developer with a background in political science and civil law.
+                            My favorite activities are going for walks in the park, eating delicious food, and spending time with my beloved yorkie.
+                        </p>
+                    </div>
                 </Toggle>
-                <Toggle title="Daily Schedule">
-                        <div className="answer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
-                        </div>
+                <Toggle title='"What do you usually code?"'>
+                    <div className="answer">
+                        <p>
+                            I am currently honing my skills to create awesome websites for companies and individuals using Python and JavaScript.
+                            I also have plans to learn advanced data science with Python and R in the near future.
+                        </p>
+                    </div>
                 </Toggle>
-                <Toggle title="Different Payment Methods">
-                        <div className="answer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
-                        </div>
+                <Toggle title='"When did you start coding?"'>
+                    <div className="answer">
+                        <p>
+                            I was introduced to programming in late 2018 through my interest in videogames and game development.
+                            I started to learn code for professional aspirations towards the end of 2019.
+                        </p>
+                    </div>
                 </Toggle>
-                <Toggle title="What Products Do You Offer?">
-                        <div className="answer">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
-                        </div>
+                <Toggle title='"May I see some of your projects?"'>
+                    <div className="answer">
+                        <p>
+                            Absolutely! You can check out my work in my Work page.
+                        </p>
+                    </div>
+                </Toggle>
+                <Toggle title='"Did you say you got AIDS?"'>
+                    <div className="answer">
+                        <p>
+                            No, I don't have AIDS. That's not what I said. Next question!
+                        </p>
+                    </div>
                 </Toggle>
             </AnimateSharedLayout>
         </Faq>
