@@ -80,7 +80,7 @@ const Awards = styled.div`
     margin: 5rem 5rem 0rem 5rem;
     align-items: center;
     justify-content: space-around;
-    @media (max-width: 1500px) {
+    @media (max-width: 1200px) {
         display: block;
         margin: 2rem 2rem;
     }

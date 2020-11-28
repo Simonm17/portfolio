@@ -28,20 +28,20 @@ const ContactUs = () => {
                 <div>
                     <Hide>
                         <Social variants={titleAnimation}>
-                            <Circle />
+                            {/* <Circle /> */}
                             <a class="mail" href="mailto:ryanchuung@gmail.com" target="_blank" data-tip="ryanchuung@gmail.com"><i class="fas fa-mail-bulk"></i></a>
                         </Social>
                     </Hide>
                     <Hide>
                         <Social variants={titleAnimation}>
-                            <Circle />
+                            {/* <Circle /> */}
                             <a class="github" href="https://github.com/simonm17" target="_blank"><i class="fab fa-github"></i></a>
                             <a class="stack" href="https://stackoverflow.com/users/12266621/rython" rel="nonreferrer" target="_blank"><i class="fab fa-stack-overflow"></i></a>
                         </Social>
                     </Hide>
                     <Hide>
                         <Social variants={titleAnimation}>
-                            <Circle />
+                            {/* <Circle /> */}
                             <a class="discord" data-tip="Tuna#3900"><i class="fab fa-discord main-i"></i></a>
                             <a class="instagram" href="https://www.instagram.com/ryanchuung/" rel="nonreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
                         </Social>
