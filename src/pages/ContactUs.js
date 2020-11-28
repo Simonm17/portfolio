@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import ReactTooltip from 'react-tooltip';
 import talgi2 from '../img/talgi2.jpg';
 import { photoAnim } from '../animation';
+import resume from '../img/Resume.pdf';
 
 const ContactUs = () => {
     return (
@@ -28,7 +29,7 @@ const ContactUs = () => {
                     <Hide>
                         <Social variants={titleAnimation}>
                             <a class="mail" href="mailto:ryanchuung@gmail.com" target="_blank" data-tip="ryanchuung@gmail.com"><i class="fas fa-mail-bulk"></i></a>
-                            <a class="pdf" href="resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                            <a class="pdf" href={resume} target="_blank"><i class="fas fa-file-pdf"></i></a>
                         </Social>
                     </Hide>
                     <Hide>
@@ -45,9 +46,7 @@ const ContactUs = () => {
                     </Hide>
                 </div>
             </div>
-
-                <Img variants={photoAnim} initial="hidden" animate="show" src={talgi2} alt="lane" />
-            
+            <Img variants={photoAnim} initial="hidden" animate="show" src={talgi2} alt="lane" />
         </ContactStyle>
     )
 }
@@ -68,13 +67,6 @@ const Title = styled.div`
 
 const Hide = styled.div`
     overflow: hidden;
-`;
-
-const Circle = styled.div`
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    background: #353535;
 `;
 
 const Img = styled(motion.img)`
