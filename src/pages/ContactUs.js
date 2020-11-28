@@ -3,8 +3,7 @@ import { motion } from 'framer-motion';
 import { pageAnimation, titleAnimation } from '../animation';
 import styled from 'styled-components';
 import ReactTooltip from 'react-tooltip';
-import lane from '../img/lane.jpg';
-import { Image } from '../styles';
+import talgi2 from '../img/talgi2.jpg';
 import { photoAnim } from '../animation';
 
 const ContactUs = () => {
@@ -28,20 +27,18 @@ const ContactUs = () => {
                 <div>
                     <Hide>
                         <Social variants={titleAnimation}>
-                            {/* <Circle /> */}
                             <a class="mail" href="mailto:ryanchuung@gmail.com" target="_blank" data-tip="ryanchuung@gmail.com"><i class="fas fa-mail-bulk"></i></a>
+                            <a class="pdf" href="resume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
                         </Social>
                     </Hide>
                     <Hide>
                         <Social variants={titleAnimation}>
-                            {/* <Circle /> */}
                             <a class="github" href="https://github.com/simonm17" target="_blank"><i class="fab fa-github"></i></a>
                             <a class="stack" href="https://stackoverflow.com/users/12266621/rython" rel="nonreferrer" target="_blank"><i class="fab fa-stack-overflow"></i></a>
                         </Social>
                     </Hide>
                     <Hide>
                         <Social variants={titleAnimation}>
-                            {/* <Circle /> */}
                             <a class="discord" data-tip="Tuna#3900"><i class="fab fa-discord main-i"></i></a>
                             <a class="instagram" href="https://www.instagram.com/ryanchuung/" rel="nonreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
                         </Social>
@@ -49,7 +46,7 @@ const ContactUs = () => {
                 </div>
             </div>
 
-                <Img variants={photoAnim} initial="hidden" animate="show" src={lane} alt="lane" />
+                <Img variants={photoAnim} initial="hidden" animate="show" src={talgi2} alt="lane" />
             
         </ContactStyle>
     )
@@ -98,10 +95,13 @@ const Social = styled(motion.div)`
     }
     a {
         margin: 2rem;
-        font-size: 4rem;
+        font-size: 4.5rem;
     }
     .mail {
         color: lightblue;
+    }
+    .pdf {
+        color: rgb(199, 0, 0);
     }
     .github {
         color: rgb(206, 206, 206);
@@ -113,7 +113,6 @@ const Social = styled(motion.div)`
         color: #7289da
     }
     .instagram {
-        font-size: 72px;
         background: -webkit-linear-gradient(#405DE6, #833AB4, #C13584, #FD1D1D, #F77737, #FFDC80);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

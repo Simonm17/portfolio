@@ -5,42 +5,42 @@ import { MovieState } from '../movieState';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-const MovieDetail = () => {
+const ProjectDetail = () => {
     const history = useHistory();
     const url = history.location.pathname;
 
-    const [movies, setMovies] = useState(MovieState);
-    const [movie, setMovie] = useState(null);
+    const [projects, setProjects] = useState(MovieState);
+    const [project, setProject] = useState(null);
 
     useEffect(
         () => {
-            const currentMovie = movies.filter((stateMovie) => 
-                stateMovie.url === url
+            const currentProject = projects.filter((stateProject) => 
+                stateProject.url === url
             )
-            setMovie(currentMovie[0]);
-        }, [movies, url]
+            setProject(currentProject[0]);
+        }, [projects, url]
     )
 
     return (
         <>
-        {movie && (
+        {project && (
             <Details variants={pageAnimation} initial="hidden" animate="show" exit="exit">
                 <HeadLine>
-                    <h2>{movie.title}</h2>
-                    <img src={movie.mainImg} alt="movie" />
+                    <h2>{project.title}</h2>
+                    <img src={project.mainImg} alt="project" />
                 </HeadLine>
-                <Awards>
-                    {movie.infos.map( info => (
-                        <Award
+                <Features>
+                    {project.infos.map( info => (
+                        <Feature
                             title={info.title}
                             description={info.description}
                             key={info.tite}
                         />
                     ))}
-                </Awards>
-                <Github href={movie.link} target="_blank" rel="nonreferrer">View code <i class="fas fa-code-branch"></i></Github>
+                </Features>
+                <Github href={project.link} target="_blank" rel="nonreferrer">View code <i class="fas fa-code-branch"></i></Github>
                 <ImageDisplay>
-                    <img src={movie.secondaryImg} alt="movie" />
+                    <img src={project.secondaryImg} alt="project" />
                 </ImageDisplay>
             </Details>
         )}
@@ -74,7 +74,7 @@ const HeadLine = styled.div`
     }
 `;
 
-const Awards = styled.div`
+const Features = styled.div`
     min-height: 80vh;
     display: flex;
     margin: 5rem 5rem 0rem 5rem;
@@ -86,7 +86,7 @@ const Awards = styled.div`
     }
 `;
 
-const AwardStyle = styled.div`
+const FeatureStyle = styled.div`
     padding: 5rem;
     h3 {
         font-size: 2rem;
@@ -102,13 +102,13 @@ const AwardStyle = styled.div`
     }
 `;
 
-const Award = ({ title, description }) => {
+const Feature = ({ title, description }) => {
     return (
-        <AwardStyle>
+        <FeatureStyle>
             <h3>{title}</h3>
             <div className="line"></div>
             <p>{description}</p>
-        </AwardStyle>
+        </FeatureStyle>
     )
 }
 
@@ -130,4 +130,4 @@ const Github = styled.a`
     margin: -2rem 0 10rem 0;
 `;
 
-export default MovieDetail;
+export default ProjectDetail;
