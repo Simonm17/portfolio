@@ -25,21 +25,21 @@ const ContactUs = () => {
                         </motion.h2>
                     </Hide>
                 </Title>
-                <div>
+                <div class="link-container">
                     <Hide>
-                        <Social variants={titleAnimation}>
+                        <Social class="links" variants={titleAnimation}>
                             <a class="mail" href="mailto:ryanchuung@gmail.com" target="_blank" data-tip="ryanchuung@gmail.com"><i class="fas fa-mail-bulk"></i></a>
                             <a class="pdf" href={resume} target="_blank"><i class="fas fa-file-pdf"></i></a>
                         </Social>
                     </Hide>
                     <Hide>
-                        <Social variants={titleAnimation}>
+                        <Social class="links" variants={titleAnimation}>
                             <a class="github" href="https://github.com/simonm17" target="_blank"><i class="fab fa-github"></i></a>
                             <a class="stack" href="https://stackoverflow.com/users/12266621/rython" rel="nonreferrer" target="_blank"><i class="fab fa-stack-overflow"></i></a>
                         </Social>
                     </Hide>
                     <Hide>
-                        <Social variants={titleAnimation}>
+                        <Social class="links" variants={titleAnimation}>
                             <a class="discord" data-tip="Tuna#3900"><i class="fab fa-discord main-i"></i></a>
                             <a class="instagram" href="https://www.instagram.com/ryanchuung/" rel="nonreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
                         </Social>
@@ -58,11 +58,26 @@ const ContactStyle = styled(motion.div)`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 1366px) {
+        justify-content: center;
+        .link-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 0;
+    }
 `;
 
 const Title = styled.div`
     margin-bottom: 4rem;
     color: black;
+    @media (max-width: 1366px) {
+        text-align: center;
+        margin-top: 3rem;
+    }
 `;
 
 const Hide = styled.div`
@@ -74,8 +89,12 @@ const Img = styled(motion.img)`
     width: 50%;
     object-fit: cover;
 
+    @media (max-width: 1300px) {
+        width: 100%;
+    }
+
     @media (max-width: 768px) {
-        display: none;
+        padding: 1rem;
     }
 `;
 

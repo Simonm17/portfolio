@@ -63,6 +63,12 @@ const Projects = styled(motion.div)`
     h2 {
         padding: 1rem 0rem;
     }
+    @media (max-width: 768px) {
+        padding: 0.75rem;
+        h2 {
+            text-align: center;
+        }
+    }
 `;
 
 const Project = styled(motion.div)`

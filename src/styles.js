@@ -9,6 +9,13 @@ export const About = styled(motion.div)`
     justify-content: space-between;
     padding: 5rem 10rem;
     color: white;
+    @media (max-width: 768px) {
+        padding: 0;
+        img {
+            display: none;
+        }
+        justify-content: center;
+    }
 `;
 
 export const Description = styled.div`
@@ -16,6 +23,14 @@ export const Description = styled.div`
     padding-right: 5rem;
     h2 {
         font-weight: lighter;
+    }
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-align: center;
     }
 `;
 
@@ -26,6 +41,9 @@ export const Image = styled.div`
         width: 100%;
         height: 80vh;
         object-fit: cover;
+    }
+    @media (max-width: 768px) {
+        flex: 0;
     }
 `;
 

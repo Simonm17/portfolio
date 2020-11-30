@@ -68,6 +68,9 @@ const Faq = styled(About)`
         height: 0.2rem;
         margin: 2rem 0rem;
         width: 100%;
+        @media (max-width: 768px) {
+            width: 90%;
+        }
     }
     .question {
         padding: 3rem 0rem;
@@ -77,6 +80,31 @@ const Faq = styled(About)`
         padding: 2rem 0rem;
         p {
             padding: 1rem 0rem;
+        }
+    }
+    @media (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 0rem 0.5rem;
+        h2 {
+            padding-bottom: 0;
+        }
+        .faq-line {
+            margin: 0;
+        }
+        .answer {
+            padding-top: 1rem;
+            p {
+                padding-right: 0rem;
+            }
+        }
+        .question {
+            padding: 0;
+        }
+        span {
+            text-align: center;
         }
     }
 `;

@@ -5,7 +5,7 @@ import { About, Description, Image, Hide } from '../styles';
 import React from 'react';
 import talgi from '../img/talgi.jpg';
 import Wave from './Wave';
-
+import { HashLink } from 'react-router-hash-link';
 
 const AboutSection = () => {
 
@@ -22,7 +22,7 @@ const AboutSection = () => {
                 </motion.div>
                 <motion.p variants={fade}><i class="fas fa-map-marker-alt"></i> Orange County, CA, USA
                 </motion.p>
-                <Button href="#faq" variants={fade}>More About Me</Button>
+                <HashLink smooth to="/#faq"><Button variants={fade}>More About Me</Button></HashLink>
             </Description>
             <Image>
                 <motion.img variants={photoAnim} initial="hidden" animate="show" src={talgi} alt="cute lil yorkie porkie"></motion.img>
