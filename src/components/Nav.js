@@ -91,7 +91,6 @@ const StyledNav = styled.nav `
             }
         }
     @media (max-width: 768px) {
-        height: 5vh;
         padding: 0;
         h1 {
             display: none;
