@@ -11,36 +11,31 @@ const FaqSection = () => {
     const [element, controls] = useScroll();
     return (
         <Faq id="faq" variants={fade} animate={controls} initial="hidden" ref={element}>
-            <h2>You got Q's, I got A's. <span>FAQ</span></h2>
+            <h2>You got Q's, I got A's. </h2>
+            <span>FAQ</span>
             <AnimateSharedLayout>
                 <Toggle title='"Tell me a little bit about yourself!"'>
                     <div className="answer">
                         <p>
-                            I am an aspiring software developer with a background in political science and civil law.
-                            My favorite activities are going for walks in the park, eating delicious food, and spending time with my beloved yorkie.
+                            I am an aspiring professional software developer with a background in political science and civil law.
+                            I mostly program in Python to make websites, but I also enjoy building code in HTML, CSS, and JavaScript.
+                            In my spare time outside of learning software development, I love playing MMO's and FPS, hiking outdoors, and spending time with my beloved yorkie.
                         </p>
                     </div>
                 </Toggle>
-                <Toggle title='"What do you usually code?"'>
+                <Toggle title='"What kind of websites do you make?"'>
                     <div className="answer">
                         <p>
-                            I am currently honing my skills to create awesome websites for companies and individuals using Python and JavaScript.
-                            I also have plans to learn advanced data science with Python and R in the near future.
+                            Currently, my focus of web development is around creating task management-based software that assists with bookkeeping, scheduling, and to-do lists.
+                            You can check out my projects <Link to="/projects">here</Link>.
                         </p>
                     </div>
                 </Toggle>
-                <Toggle title='"When did you start coding?"'>
+                <Toggle title='"What services can you provide for me?"'>
                     <div className="answer">
                         <p>
-                            I was introduced to programming in late 2018 through my interest in videogames and game development.
-                            I started to learn code for professional aspirations towards the end of 2019.
-                        </p>
-                    </div>
-                </Toggle>
-                <Toggle title='"May I see some of your projects?"'>
-                    <div className="answer">
-                        <p>
-                            Absolutely! You can check out my work in my <Link to="/projects">project page</Link>.
+                            My services include but are not limited to creating simple portfolios, fetching data with webscraping or API's, and host dynamic websites on the web.
+                            Feel free to reach me by <Link to="/contact">email or social media!</Link>
                         </p>
                     </div>
                 </Toggle>
@@ -90,12 +85,18 @@ const Faq = styled(About)`
         padding: 0rem 0.5rem;
         h2 {
             padding-bottom: 0;
+            display: none;
+        }
+        span {
+                display: block;
+                font-size: 2rem;
+                text-align: center;
         }
         .faq-line {
             margin: 0;
         }
         .answer {
-            padding-top: 1rem;
+            padding-top: 0rem;
             p {
                 padding-right: 0rem;
             }
