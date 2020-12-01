@@ -11,8 +11,7 @@ const FaqSection = () => {
     const [element, controls] = useScroll();
     return (
         <Faq id="faq" variants={fade} animate={controls} initial="hidden" ref={element}>
-            <h2>You got Q's, I got A's. </h2>
-            <span>FAQ</span>
+            <h2>You got Q's, I got A's. <span>FAQ</span></h2>
             <AnimateSharedLayout>
                 <Toggle title='"Tell me a little bit about yourself!"'>
                     <div className="answer">
@@ -85,12 +84,10 @@ const Faq = styled(About)`
         padding: 0rem 0.5rem;
         h2 {
             padding-bottom: 0;
-            display: none;
+            font-size: 32px;
         }
-        span {
-                display: block;
-                font-size: 2rem;
-                text-align: center;
+        h4 {
+            font-size: 22px;
         }
         .faq-line {
             margin: 0;
@@ -103,9 +100,6 @@ const Faq = styled(About)`
         }
         .question {
             padding: 0;
-        }
-        span {
-            text-align: center;
         }
     }
 `;
