@@ -9,9 +9,10 @@ import { fade } from '../animation';
 
 
 const ServicesSection = () => {
-    const [element, controls] = useScroll();
+    // const [element, controls] = useScroll();
     return (
-        <Services variants={fade} animate={controls} initial="hidden" ref={element}>
+        // <Services variants={fade} animate={controls} initial="hidden" ref={element}>
+        <Services >
             <Description>
                 <h2>Ryan's <span>Favorites</span></h2>
                 <Cards>

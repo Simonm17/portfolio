@@ -32,6 +32,9 @@ export const Description = styled.div`
         padding: 0;
         text-align: center;
     }
+    a {
+        text-decoration: none;
+    }
 `;
 
 export const Image = styled.div`

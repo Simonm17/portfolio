@@ -6,6 +6,8 @@ import ReactTooltip from 'react-tooltip';
 import talgi2 from '../img/talgi2.jpg';
 import { photoAnim } from '../animation';
 import resume from '../img/Resume.pdf';
+import ScrollTop from '../components/ScrollTop';
+
 
 const ContactUs = () => {
     return (
@@ -47,6 +49,7 @@ const ContactUs = () => {
                 </div>
             </div>
             <Img variants={photoAnim} initial="hidden" animate="show" src={talgi2} alt="lane" />
+            <ScrollTop />
         </ContactStyle>
     )
 }
