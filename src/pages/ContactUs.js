@@ -46,6 +46,12 @@ const ContactUs = () => {
                             <a class="instagram" href="https://www.instagram.com/ryanchuung/" rel="nonreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
                         </Social>
                     </Hide>
+                    <Hide>
+                        <Social class="links" variants={titleAnimation}>
+                            <a class="youtube" href="https://www.youtube.com/channel/UCW5mwdJayVUqDAqla1yRywQ" rel="nonreferrer" target="_blank"><i class="fab fa-youtube"></i></a>
+                            <a class="twitch" href="https://www.twitch.tv/tunahobby" rel="nonreferrer" target="_blank"><i class="fab fa-twitch"></i></a>
+                        </Social>
+                    </Hide>
                 </div>
             </div>
             <Img variants={photoAnim} initial="hidden" animate="show" src={talgi2} alt="lane" />
@@ -124,12 +130,18 @@ const Social = styled(motion.div)`
         color: #ef8236;
     }
     .discord {
-        color: #7289da
+        color: #7289da;
     }
     .instagram {
         background: -webkit-linear-gradient(#405DE6, #833AB4, #C13584, #FD1D1D, #F77737, #FFDC80);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    .youtube {
+        color: #c4302b;
+    }
+    .twitch {
+        color: #6441a5;
     }
 `;
 
