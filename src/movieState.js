@@ -18,17 +18,17 @@ export const MovieState = () => {
         {
           title: "Schedule your QME's.",
           description:
-            "“Sesigned to keep track of your medigal-legal appointments.”",
+            "“Keep track of your medigal-legal appointments.”",
         },
         {
           title: "Manage your account easily.",
           description:
-            "“Uses Django all-auth and O'Auth logins to keep your account safe and simple.”",
+            "“Uses Django all-auth and OAuth2 login to keep your account simple and secure.”",
         },
         {
           title: "It's part of something bigger.",
           description:
-            "“Scheduling your appointments is just one of many features to come in a legal case management software system.”",
+            "“Introducing one of many features to come in a legal management software system.”",
         },
       ],
     },
@@ -40,19 +40,19 @@ export const MovieState = () => {
       link: "https://github.com/Simonm17/django_boilerplate",
       infos: [
         {
-          title: "Foundation to any good project",
+          title: "Build a strong foundation",
           description:
-            "“Create efficient account management systems.”",
+            "“Create your website starting with a good setup.”",
         },
         {
-          title: "Looks fresh and clean.",
+          title: "KISS",
           description:
-            "“Built to look sharp and crisp.”",
+            "“Keep it simple, stupid. Great advice, hurts my feelings every time.”",
         },
         {
           title: "Rinse and repeat.",
           description:
-            "“Built to be reused again and again.”",
+            "“Use the template to build all your website!”",
         },
       ],
     },
@@ -64,19 +64,19 @@ export const MovieState = () => {
       link: "https://github.com/Simonm17/django_blog",
       infos: [
         {
-          title: "This is where it all began.",
+          title: "My journey began here.",
           description:
             "“Showcasing my first project that started it all.”",
         },
         {
-          title: "One framework, countless websites.",
+          title: "One framework, infinite websites.",
           description:
             "“Demonstrating the limitless potential of Django.”",
         },
         {
           title: "Start here now.",
           description:
-            "“Start your own coding journey with a basic blog app as soon as today!”",
+            "“Start your own coding journey with a basic web app today!”",
         },
       ],
     },
