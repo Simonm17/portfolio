@@ -21,32 +21,28 @@ const ServicesSection = () => {
                             <i class="fab fa-python"></i>
                             <h3>Python</h3>
                         </div>
-                        <p>
-                            Easy to learn and perfect for self-teaching developers.
-                        </p>
+                        <p>Versatile & simplified.</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <i class="fas fa-server"></i>
                             <h3>Django</h3>
                         </div>
-                        <p>
-                            Fast setup, good built-in security, and has ready-to-use features like class-based views.
-                        </p>
+                        <p>Secure & reliable.</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <i class="fab fa-react"></i>
                             <h3>React</h3>
                         </div>
-                        <p>Fast, clean, and perfect for API integration.</p>
+                        <p>Fun & stateful!</p>
                     </Card>
                     <Card>
                         <div className="icon">
                             <i class="fas fa-database"></i>
                             <h3>PostgreSQL</h3>
                         </div>
-                        <p>Highly reliable and stable open source database.</p>
+                        <p>Free & newbie-friendly!</p>
                     </Card>
                 </Cards>
             </Description>

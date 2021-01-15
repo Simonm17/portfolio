@@ -17,16 +17,16 @@ const FaqSection = () => {
                 <Toggle title='"Tell me a little bit about yourself!"'>
                     <div className="answer">
                         <p>
-                            I am an aspiring professional software developer with a background in political science and civil law.
-                            I mostly program in Python to make websites, but I also enjoy building code in JavaScript.
-                            In my spare time outside of learning software development, I love playing MMO's and FPS, hiking outdoors, and spending time with my beloved yorkie.
+                            I am a Django-focused web developer with a background in political science and civil law.
+                            I mostly code with Python, but I also enjoy programming with JavaScript.
+                            In my spare time outside of learning software, I love playing MMO's and FPS, hiking outdoors, and spending time with my beloved yorkie.
                         </p>
                     </div>
                 </Toggle>
                 <Toggle title='"What kind of websites do you make?"'>
                     <div className="answer">
                         <p>
-                            My current focus of web development is around creating task management-based software that assists with bookkeeping, scheduling, and to-do lists.
+                            My current focus of web development is around creating task management-based software that assists with bookkeeping, scheduling, and task lists.
                             You can check out my projects <Link to="/projects">here</Link>.
                         </p>
                     </div>
