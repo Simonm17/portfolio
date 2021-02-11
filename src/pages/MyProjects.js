@@ -26,10 +26,10 @@ const MyProjects = () => {
                 <Frame4 variants={slider}></Frame4>
             </motion.div>
             <Project>
-                <motion.h2 variants={fade}>Scheduler</motion.h2>
+                <motion.h2 variants={fade}>Runetask</motion.h2>
                 <motion.div variants={lineAnim} className="line">
                 </motion.div>
-                <Link to="/projects/scheduler">
+                <Link to="/projects/runetask">
                     <Hide>
                         <motion.img variants={photoAnim} src={meeting} alt="meeting"/>
                     </Hide>

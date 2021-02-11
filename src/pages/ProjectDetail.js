@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import { MovieState } from '../movieState';
+import { ProjectState } from '../projectState';
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../animation';
 
@@ -9,7 +9,7 @@ const ProjectDetail = () => {
     const history = useHistory();
     const url = history.location.pathname;
 
-    const [projects, setProjects] = useState(MovieState);
+    const [projects, setProjects] = useState(ProjectState);
     const [project, setProject] = useState(null);
 
     useEffect(
@@ -38,7 +38,10 @@ const ProjectDetail = () => {
                         />
                     ))}
                 </Features>
-                <Github href={project.link} target="_blank" rel="nonreferrer">View code <i class="fas fa-code-branch"></i></Github>
+                <Container>
+                    <Link href={project.github} target="_blank" rel="nonreferrer">View code <i class="fas fa-code-branch"></i></Link>
+                    <Link href={project.website} target="_blank" rel="nonreferrer">View page <i class="far fa-window-maximize"></i></Link>
+                </Container>
                 <ImageDisplay>
                     <img src={project.secondaryImg} alt="project" />
                 </ImageDisplay>
@@ -62,7 +65,7 @@ const HeadLine = styled.div`
     position: relative;
     h2 {
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: 50%;
         transform: translate(-50%, -10%);
     }
@@ -87,9 +90,13 @@ const Features = styled.div`
 `;
 
 const FeatureStyle = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 5rem;
     h3 {
         font-size: 2rem;
+        text-align: center;
     }
     .line {
         width: 80%;
@@ -99,6 +106,7 @@ const FeatureStyle = styled.div`
     }
     p {
         padding: 2rem 0rem;
+        text-align: center;
     }
 `;
 
@@ -121,7 +129,14 @@ const ImageDisplay = styled.div`
     }
 `;
 
-const Github = styled.a`
+const Container = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 60%;
+`;
+
+const Link = styled.a`
     color: white;
     text-decoration: none;
     font-size: 3rem;

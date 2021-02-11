@@ -6,29 +6,30 @@ import boilerplate2 from './img/boilerplate2.jpg';
 import blog from './img/blog.jpg';
 import blog2 from './img/blog2.jpg';
 
-export const MovieState = () => {
+export const ProjectState = () => {
   return [
     {
-      title: "Scheduler",
+      title: "Runetask",
       mainImg: meeting,
       secondaryImg: meeting2,
-      url: "/projects/scheduler",
-      link: "https://github.com/Simonm17/scheduler",
+      url: "/projects/runetask",
+      website: "https://compassionate-tesla-028027.netlify.app/",
+      github: "https://github.com/Simonm17/runetask",
       infos: [
         {
-          title: "Schedule your QME's.",
+          title: "Pursue your goals.",
           description:
-            "“Keep track of your medigal-legal appointments.”",
+            "“Keep track of your in-game tasks.”",
         },
         {
-          title: "Manage your account easily.",
+          title: "Experience DRF.",
           description:
-            "“Uses Django all-auth and OAuth2 login to keep your account simple and secure.”",
+            "“Django REST Framework uses ModelViewSets to conveniently serialize your data.”",
         },
         {
-          title: "It's part of something bigger.",
+          title: "It comes decoupled.",
           description:
-            "“Introducing one of many features to come in a legal management software system.”",
+            "“Runetask uses Django and React separately to showcase traditional API uses.”",
         },
       ],
     },
@@ -37,7 +38,8 @@ export const MovieState = () => {
       mainImg: boilerplate,
       url: "/projects/django-boilerplate",
       secondaryImg: boilerplate2,
-      link: "https://github.com/Simonm17/django_boilerplate",
+      website: "https://fierce-badlands-45950.herokuapp.com/",
+      github: "https://github.com/Simonm17/django_boilerplate",
       infos: [
         {
           title: "Build a strong foundation",
@@ -61,7 +63,8 @@ export const MovieState = () => {
       mainImg: blog,
       url: "/projects/blog",
       secondaryImg: blog2,
-      link: "https://github.com/Simonm17/django_blog",
+      website:"https://blog-of-tuna.herokuapp.com/",
+      github: "https://github.com/Simonm17/django_blog",
       infos: [
         {
           title: "My journey began here.",
