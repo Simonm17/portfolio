@@ -42,12 +42,6 @@ const ContactUs = () => {
                     </Hide>
                     <Hide>
                         <Social class="links" variants={titleAnimation}>
-                            <a class="discord" data-tip="Tuna#3900"><i class="fab fa-discord main-i"></i></a>
-                            <a class="instagram" href="https://www.instagram.com/ryanchuung/" rel="nonreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </Social>
-                    </Hide>
-                    <Hide>
-                        <Social class="links" variants={titleAnimation}>
                             <a class="youtube" href="https://www.youtube.com/channel/UCW5mwdJayVUqDAqla1yRywQ" rel="nonreferrer" target="_blank"><i class="fab fa-youtube"></i></a>
                             <a class="twitch" href="https://www.twitch.tv/tunahobby" rel="nonreferrer" target="_blank"><i class="fab fa-twitch"></i></a>
                         </Social>

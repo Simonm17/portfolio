@@ -17,10 +17,11 @@ const AboutSection = () => {
                         <motion.h2 variants={titleAnimation}>Hi there!</motion.h2>
                     </Hide>
                     <Hide>
-                        <motion.h2 variants={titleAnimation}>I'm <span>Ryan,</span> your go-to  software developer.</motion.h2>
+                        <motion.h2 variants={titleAnimation}>I'm <span>Ryan,</span> your go-to software developer.</motion.h2>
                     </Hide>
                 </motion.div>
-                <motion.p variants={fade}><i class="fas fa-map-marker-alt"></i> Orange County, CA, USA
+                <motion.p variants={fade}>
+                    <i class="fas fa-map-marker-alt"></i> Orange County, CA, USA
                 </motion.p>
                 <HashLink smooth to="/#faq"><Button variants={fade}>More About Me</Button></HashLink>
             </Description>

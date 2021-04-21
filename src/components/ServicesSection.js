@@ -14,14 +14,14 @@ const ServicesSection = () => {
         // <Services variants={fade} animate={controls} initial="hidden" ref={element}>
         <Services >
             <Description>
-                <h2>Ryan's <span>Favorites</span></h2>
+                <h2>Ryan's Favorite <span>Developer Tools</span></h2>
                 <Cards>
                     <Card>
                         <div className="icon">
                             <i class="fab fa-python"></i>
                             <h3>Python</h3>
                         </div>
-                        <p>Versatile & simplified.</p>
+                        <p>Versatile & eloquent.</p>
                     </Card>
                     <Card>
                         <div className="icon">
@@ -42,7 +42,7 @@ const ServicesSection = () => {
                             <i class="fas fa-database"></i>
                             <h3>PostgreSQL</h3>
                         </div>
-                        <p>Free & newbie-friendly!</p>
+                        <p>Free & flexible!</p>
                     </Card>
                 </Cards>
             </Description>

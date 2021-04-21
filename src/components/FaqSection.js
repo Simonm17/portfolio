@@ -17,9 +17,9 @@ const FaqSection = () => {
                 <Toggle title='"Tell me a little bit about yourself!"'>
                     <div className="answer">
                         <p>
-                            I am a Django-focused web developer with a background in political science and civil law.
-                            I mostly code with Python, but I also enjoy programming with JavaScript.
-                            In my spare time outside of learning software, I love playing MMO's and FPS, hiking outdoors, and spending time with my beloved yorkie.
+                            I am a Django-focused web developer with a background in political science and pre-law.
+                            I primarily code in Python, but I also enjoy programming in JavaScript.
+                            Outside of coding, I enjoy spending time with my dog and cooking/eating good food.
                         </p>
                     </div>
                 </Toggle>
